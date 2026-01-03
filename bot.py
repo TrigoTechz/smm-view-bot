@@ -143,13 +143,13 @@ def handle_text(message):
             parse_mode='html')
 
     elif message.text == "📜 Help":
-        msg = f"<b><u>❓ Frequently Asked questions</u></b>\n\nMinimum order: {min_view}\nMaximum order: {max_view}\n\n🆘 Support: @KsCoder"
+        msg = f"<b><u>❓ Frequently Asked questions</u></b>\n\nMinimum order: {min_view}\nMaximum order: {max_view}\n\n🆘 Support: @A_with"
         bot.reply_to(message, msg, parse_mode="html")
 
     elif message.text == "💳 Pricing":
-        msg = f"<b><u>💎 Pricing 💎</u></b>\n\nYour ID: <code>{user_id}</code>\nContact @KsCoder to buy views."
+        msg = f"<b><u>💎 Pricing 💎</u></b>\n\nYour ID: <code>{user_id}</code>\nContact @A_with to buy views."
         markup = InlineKeyboardMarkup()
-        markup.add(InlineKeyboardButton("💲 Contact Support", url="https://t.me/KsCoder"))
+        markup.add(InlineKeyboardButton("💲 Contact Support", url="https://t.me/A_with"))
         bot.reply_to(message, msg, parse_mode="html", reply_markup=markup)
 
     elif message.text == "👁‍🗨 Order View":
@@ -235,3 +235,4 @@ if __name__ == '__main__':
         except Exception as e:
             print(f"Error: {e}")
             time.sleep(10)
+
